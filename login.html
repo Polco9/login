@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 81, 255, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            height: 30px;
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        button {
+            height: 40px;
+            width: 48%;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #login{
+            background-color: #28a745;
+        }
+
+        #login:hover {
+            background-color: #218838;
+        }
+
+        #register {
+            background-color: #007bff;
+        }
+
+        #register:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <div id="form">
+            <h1>Sign in</h1>
+            <form id="form1" action="post" method="post">
+                <input type="text" name="user" id="user" placeholder="Username">
+                <input type="text" name="gmail" id="gmail" placeholder="example@gmail.com">
+                <input type="password" name="password" id="password" placeholder="Password">
+
+                <nav>
+                        <button type="submit" id="login">Log in</button>
+
+                        <button type="submit" id="register">Sign up</button>
+                </nav>
+            </form>
+        </div>
+    </article>
+</body>
+</html>
