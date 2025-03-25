@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url("login.jpg");
+            background-image: url('photos/login.jpg');
             background-size: cover;
         }
 
@@ -27,22 +27,37 @@
             text-align: center;
         }
 
+        #logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #logo2{
+            height: 100px;
+        }
+
         h1 {
             margin-bottom: 20px;
         }
 
         input {
             height: 30px;
-            width: 100%;
+            width: 95%;
             border-radius: 10px;
             border: 1px solid #ccc;
             margin-bottom: 15px;
             padding-left: 10px;
         }
 
+        input:hover{
+            background-color: #ccc;
+            border: 1px solid black;
+        }
+
         button {
             height: 40px;
-            width: 48%;
+            width: 100%;
             border-radius: 5px;
             border: none;
             color: white;
@@ -50,19 +65,11 @@
             margin-top: 10px;
         }
 
-        #login{
-            background-color: #28a745;
-        }
-
-        #login:hover {
-            background-color: #218838;
-        }
-
-        #register {
+        #signup{
             background-color: #007bff;
         }
 
-        #register:hover {
+        #signup:hover {
             background-color: #0056b3;
         }
     </style>
@@ -70,16 +77,18 @@
 <body>
     <article>
         <div id="form">
-            <h1>Sign in</h1>
+            <div id="logo">
+                <h1>Sign Up</h1>
+                <img id="logo2" src="photos/logo_empresa.png">
+            </div>
             <form id="form1" action="post" method="post">
                 <input type="text" name="user" id="user" placeholder="Username">
                 <input type="text" name="gmail" id="gmail" placeholder="example@gmail.com">
                 <input type="password" name="password" id="password" placeholder="Password">
 
                 <nav>
-                        <button type="submit" id="login">Log in</button>
-
-                        <button type="submit" id="register">Sign up</button>
+                        <button type="submit" id="signup">Sign up</button>
+                        <p>Already have an acount? <a href="Sign_in.php"><span>Sign In</span></a></p>
                 </nav>
             </form>
         </div>
